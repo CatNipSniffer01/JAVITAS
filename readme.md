@@ -40,15 +40,15 @@ Azon kívül, ez a webshop több egzotikus és/vagy veszélyeztetett állat bér
 ## Backend
 ### Kinézet:
 Backend:
--config:
+- config:
     -database.js
--models:
+- models:
     -Animal.js
     -Booking.js
     -index.js
     -Payment.js
     -User.js
--router:
+- router:
     -animalRoutes.js
     -bookingRoutes.js
     -paymentRoutes.js
