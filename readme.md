@@ -1,4 +1,5 @@
 # Exotique Webshop (bevezetés)
+
 Exotique egy egzotikus állatok bérbeadásával foglalkozó webshop, ami az "IKT projektmunka II." tantárgy javítása érdekében készül(t) el!
 Azon kívül, ez a webshop több egzotikus és/vagy veszélyeztetett állat bérlésére ad lehetőséget. *Egzotikus és veszélyeztetett állatok bérlése
 és kereskedése súlyos legális problémákba ütközik*, de nem lehetetlen.
