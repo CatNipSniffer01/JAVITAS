@@ -53,6 +53,7 @@ Backend:
     - bookingRoutes.js
     - paymentRoutes.js
     - userRoutes.js
+- .gitignore
 - app.js
 - package-lock.json
 - package.json
