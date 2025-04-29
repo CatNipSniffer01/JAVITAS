@@ -11,14 +11,15 @@ const userRoutes = require('./router/userRoutes');
 const animalRoutes = require('./router/animalRoutes');
 const bookingRoutes = require('./router/bookingRoutes');
 const paymentRoutes = require('./router/paymentRoutes');
+const cors = require('cors');
 
 // Mount route modules
+app.use(cors());
 app.use('/api/users', userRoutes);
 app.use('/api/animals', animalRoutes);
 app.use('/api/bookings', bookingRoutes);
 app.use('/api/payments', paymentRoutes);
 
-// Sync database and start server
 
 const PORT = process.env.PORT || 3000;
 sequelize.sync({ alter: false })

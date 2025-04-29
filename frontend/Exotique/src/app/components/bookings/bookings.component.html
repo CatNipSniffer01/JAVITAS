@@ -1,1 +1,25 @@
-<p>bookings works!</p>
+<h2>Bookings</h2>
+
+<form (ngSubmit)="createBooking()" #bookingForm="ngForm">
+  <label>User ID:</label>
+  <input [(ngModel)]="newBooking.userId" name="userId" required />
+
+  <label>Animal ID:</label>
+  <input [(ngModel)]="newBooking.animalId" name="animalId" required />
+
+  <label>Start Date:</label>
+  <input type="date" [(ngModel)]="newBooking.startDate" name="startDate" required />
+
+  <label>End Date:</label>
+  <input type="date" [(ngModel)]="newBooking.endDate" name="endDate" required />
+
+  <button type="submit">Create Booking</button>
+</form>
+
+<ul>
+  <li *ngFor="let booking of bookings">
+    {{ booking.userId }} booked {{ booking.animalId }} from
+    {{ booking.startDate | date }} to {{ booking.endDate | date }}
+    <button (click)="deleteBooking(booking.id)">Delete</button>
+  </li>
+</ul>
